@@ -1,59 +1,217 @@
-body {
-    font-family: 'Catamaran', Arial, Helvetica, sans-serif;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-h2, h3 {
-    margin: 5px 0;
-}
-
-p {
-    font-size: 14px;
-    line-height: 1.5;
-}
-
-a {
-    color: blue;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-.price {
-    font-weight: bold;
+body {
+    font-family: 'Catamaran', sans-serif;
+    background: #f4f6f9;
+    color: #333;
 }
 
 img {
     width: 100%;
-    height: auto;
+    border-radius: 12px;
+}
+
+.container {
+    width: 1100px;
+    max-width: 90%;
+    margin: auto;
 }
 
 /* HEADER */
 .site-header {
-    background: #f2f2f2;
-    padding: 10px 0;
+    background: #111;
+    padding: 20px 0;
+    color: white;
 }
 
-.container {
-    width: 90%;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
+.header-grid {
+    display: grid;
+    grid-template-columns: auto auto 1fr;
     align-items: center;
+    gap: 20px;
+}
+
+.logo img {
+    width: 60px;
+}
+
+.brand {
+    font-size: 28px;
+}
+
+.nav {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: end;
+    gap: 25px;
 }
 
 .nav a {
-    margin-left: 15px;
-    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.nav a:hover {
+    color: #00c6ff;
+}
+
+/* FEATURES */
+.features {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin: 50px auto;
+}
+
+.feature {
+    background: white;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* ABOUT */
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 25px;
+    background: #00c6ff;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+/* PRODUCTS */
+.products h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.product {
+    background: white;
+    padding: 20px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.price {
+    color: #e63946;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.big {
+    font-size: 22px;
+}
+
+.highlight {
+    text-align: center;
+    margin: 60px 0;
 }
 
 /* FOOTER */
 .site-footer {
-    background: #333;
+    background: #111;
     color: white;
     text-align: center;
-    padding: 15px 0;
+    padding: 20px;
+}
+.product {
+    position: relative;
+    overflow: hidden;
+}
+
+.product {
+    transition: 0.4s ease;
+}
+
+/* Nút MUA mặc định ẩn */
+.buy-btn {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 10px 30px;
+    background: #00c6ff;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 700;
+
+    opacity: 0;
+    transform: translateY(10px);
+    transition: 0.4s ease;
+}
+
+/* Hover vào card thì nút MUA hiện ra */
+.product:hover .buy-btn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Hover hiện nút MUA */
+.product:hover .buy-btn {
+    bottom: 20px;
+}
+
+/* Hiệu ứng nâng card */
+.product:hover {
+    transform: translateY(-5px);
+    transition: 0.4s;
+}
+.product {
+    background: white;
+    transition: 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Khi di chuột vào sản phẩm */
+.product:hover {
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    color: white;
+    transform: translateY(-6px);
+}
+
+/* Chữ đổi màu khi hover */
+.product:hover h4,
+.product:hover .price {
+    color: white;
+}
+
+/* Nút MUA đổi màu */
+.product:hover .buy-btn {
+    background: white;
+    color: #0072ff;
+}
+
+/* Hiệu ứng gradient động */
+.product:hover {
+    background-size: 200% 200%;
+    animation: gradientMove 3s ease infinite;
+}
+
+/* Animation */
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
