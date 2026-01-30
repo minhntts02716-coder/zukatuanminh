@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Sản phẩm - Tech Store</title>
+    <link rel="stylesheet" href="GRID-1.css">
+
+    <style>
+        .product-header {
+            background: linear-gradient(135deg, #1d2671, #c33764);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .product-box {
+            max-width: 900px;
+            margin: -40px auto 40px;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .product-box h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #1d2671;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .product-item {
+            background: #f5f6fa;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .product-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+
+        .product-item span {
+            font-size: 30px;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .back-home {
+            display: block;
+            width: fit-content;
+            margin: 30px auto 0;
+            padding: 12px 25px;
+            background: #1d2671;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: 0.3s;
+        }
+
+        .back-home:hover {
+            background: #c33764;
+        }
+    </style>
+</head>
+<body>
+
+<header class="product-header">
+    <h1>SẢN PHẨM TECH STORE</h1>
+    <p>Đa dạng – Chính hãng – Giá tốt</p>
+</header>
+
+<section class="product-box">
+    <h2>Danh mục sản phẩm</h2>
+
+    <div class="product-grid">
+        <div class="product-item">
+            <span>⌨️</span>
+            Bàn phím cơ Gaming
+        </div>
+
+        <div class="product-item">
+            <span>🖱️</span>
+            Chuột Gaming
+        </div>
+
+        <div class="product-item">
+            <span>🎧</span>
+            Tai nghe Gaming
+        </div>
+
+        <div class="product-item">
+            <span>💻</span>
+            Laptop văn phòng & Gaming
+        </div>
+
+        <div class="product-item">
+            <span>🖨️</span>
+            Máy in & Linh kiện PC
+        </div>
+    </div>
+
+    <a href="codedasua.html" class="back-home">⬅ Quay về trang chủ</a>
+</section>
+
+</body>
+</html>

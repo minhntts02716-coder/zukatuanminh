@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Liên hệ - Tech Store</title>
+    <link rel="stylesheet" href="GRID-1.css">
+
+    <style>
+        .contact-header {
+            background: linear-gradient(135deg, #0f2027, #2c5364);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .contact-box {
+            max-width: 900px;
+            margin: -40px auto 40px;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        .contact-box h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #2c5364;
+        }
+
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .info-item {
+            background: #f5f7fa;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .info-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+        }
+
+        .info-item h3 {
+            margin-bottom: 10px;
+            color: #0f2027;
+        }
+
+        .info-item p {
+            font-size: 16px;
+        }
+
+        .back-home {
+            display: block;
+            width: fit-content;
+            margin: 30px auto 0;
+            padding: 12px 25px;
+            background: #2c5364;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: 0.3s;
+        }
+
+        .back-home:hover {
+            background: #0f2027;
+        }
+    </style>
+</head>
+<body>
+
+<header class="contact-header">
+    <h1>LIÊN HỆ TECH STORE</h1>
+    <p>Chúng tôi luôn sẵn sàng hỗ trợ bạn</p>
+</header>
+
+<section class="contact-box">
+    <h2>Thông tin liên hệ</h2>
+
+    <div class="contact-info">
+        <div class="info-item">
+            <h3>📍 Địa chỉ</h3>
+            <p>TP. Hồ Chí Minh</p>
+        </div>
+
+        <div class="info-item">
+            <h3>📧 Email</h3>
+            <p>techstore@gmail.com</p>
+        </div>
+
+        <div class="info-item">
+            <h3>📞 Hotline</h3>
+            <p>0123 456 789</p>
+        </div>
+    </div>
+
+    <a href="codedasua.html" class="back-home">⬅ Quay về trang chủ</a>
+</section>
+
+</body>
+</html>

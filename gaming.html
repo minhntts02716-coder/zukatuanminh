@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Gaming - Tech Store</title>
+    <link rel="stylesheet" href="GRID-1.css">
+
+    <style>
+        .gaming-header {
+            background: linear-gradient(135deg, #000428, #004e92);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .gaming-box {
+            max-width: 900px;
+            margin: -40px auto 40px;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        .gaming-box h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #004e92;
+        }
+
+        .gaming-desc {
+            text-align: center;
+            line-height: 1.7;
+            margin-bottom: 30px;
+        }
+
+        .gaming-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .gaming-item {
+            background: #f4f6fb;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .gaming-item:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+
+        .gaming-item span {
+            font-size: 32px;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .back-home {
+            display: block;
+            width: fit-content;
+            margin: 30px auto 0;
+            padding: 12px 25px;
+            background: #004e92;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: 0.3s;
+        }
+
+        .back-home:hover {
+            background: #000428;
+        }
+    </style>
+</head>
+<body>
+
+<header class="gaming-header">
+    <h1>GAMING GEAR</h1>
+    <p>Trang bị mạnh mẽ – Chơi game đỉnh cao</p>
+</header>
+
+<section class="gaming-box">
+    <h2>Sản phẩm Gaming nổi bật</h2>
+
+    <p class="gaming-desc">
+        Tech Store cung cấp các dòng gaming gear cao cấp giúp nâng cao trải nghiệm chơi game:
+        từ bàn phím cơ RGB, chuột gaming DPI cao, tai nghe giả lập 7.1
+        đến laptop gaming cấu hình mạnh mẽ.
+    </p>
+
+    <div class="gaming-grid">
+        <div class="gaming-item">
+            <span>⌨️</span>
+            Bàn phím cơ RGB
+        </div>
+
+        <div class="gaming-item">
+            <span>🖱️</span>
+            Chuột Gaming DPI cao
+        </div>
+
+        <div class="gaming-item">
+            <span>🎧</span>
+            Tai nghe Gaming 7.1
+        </div>
+
+        <div class="gaming-item">
+            <span>💻</span>
+            Laptop Gaming hiệu năng cao
+        </div>
+    </div>
+
+    <a href="codedasua.html" class="back-home">⬅ Quay về trang chủ</a>
+</section>
+
+</body>
+</html>
