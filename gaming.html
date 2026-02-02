@@ -7,21 +7,26 @@
 
     <style>
         .gaming-header {
-            background: linear-gradient(135deg, #000428, #004e92);
-            color: white;
-            padding: 60px 20px;
-            text-align: center;
-        }
+    background: linear-gradient(135deg, #000428, #004e92);
+    color: white;
+    padding: 20px 20px;
+    text-align: center;
 
-        .gaming-box {
-            max-width: 900px;
-            margin: -40px auto 40px;
-            background: white;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-        }
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
 
+    .gaming-box {
+    max-width: 900px;
+    margin: 140px auto 40px; /* đẩy xuống dưới header */
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
         .gaming-box h2 {
             text-align: center;
             margin-bottom: 20px;
@@ -75,6 +80,9 @@
         .back-home:hover {
             background: #000428;
         }
+        .products {
+    margin-top: 40px;
+}
     </style>
 </head>
 <body>
@@ -114,10 +122,38 @@
             Laptop Gaming hiệu năng cao
         </div>
     </div>
-
-    <a href="index.html" class="back-home">⬅ Quay về trang chủ</a>
 </section>
+<section class="products container">
+        <h2>SẢN PHẨM CỦA CHÚNG TÔI</h2>
 
+        <div class="product-grid">
+            <div class="product">
+                <img src="banphim.jpg">
+                <h4>BÀN PHÍM CƠ RGB</h4>
+                <p class="price">1.290.000đ</p>
+                <a href="login.html" class="buy-btn">MUA</a>
+            </div>
+            <div class="product">
+                <img src="chuotdpicao.jpg">
+                <h4>CHUOT DPI CAO</h4>
+                <p class="price">1.590.000đ</p>
+                <a href="login.html" class="buy-btn">MUA</a>
+            </div>
+            <div class="product">
+                <img src="7.1.jpg">
+                <h4>TAI NGHE GAMING 7.1</h4>
+                <p class="price">1.590.000đ</p>
+                <a href="login.html" class="buy-btn">MUA</a>
+            </div>
+        </div>
+
+        <div class="highlight">
+            <img src="gaming.jpg">
+            <h3>LAPTOP HIỆU NĂNG CAO</h3>
+            <p class="price big">22.900.000đ</p>
+            <a href="#" class="buy-btn">MUA</a>
+        </div>
+         <a href="codedasua.html" class="back-home">⬅ Quay về trang chủ</a>
+    </section>
 </body>
-
 </html>
