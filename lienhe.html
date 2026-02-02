@@ -7,20 +7,26 @@
 
     <style>
         .contact-header {
-            background: linear-gradient(135deg, #0f2027, #2c5364);
-            color: white;
-            padding: 60px 20px;
-            text-align: center;
-        }
+    background: linear-gradient(135deg, #0f2027, #2c5364);
+    color: white;
+    padding: 20px 20px;
+    text-align: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
 
         .contact-box {
-            max-width: 900px;
-            margin: -40px auto 40px;
-            background: white;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-        }
+    max-width: 900px;
+    margin: 140px auto 40px; /* đẩy xuống dưới header */
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
 
         .contact-box h2 {
             text-align: center;
@@ -71,6 +77,27 @@
         .back-home:hover {
             background: #0f2027;
         }
+        .email-link {
+    color: #2c5364;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.email-link:hover {
+    color: #0f2027;
+}
+.contact-link {
+    color: #2c5364;
+    text-decoration: underline;
+    font-weight: 600;
+    text-underline-offset: 4px;   /* gạch chân cách chữ */
+    text-decoration-thickness: 2px; /* độ dày gạch */
+    transition: 0.3s;
+}
+
+.contact-link:hover {
+    color: #0f2027;
+}
     </style>
 </head>
 <body>
@@ -86,23 +113,39 @@
     <div class="contact-info">
         <div class="info-item">
             <h3>📍 Địa chỉ</h3>
-            <p>TP. Hồ Chí Minh</p>
+            <p>
+    <a href="https://www.google.com/maps/place/10.8123649,106.5916896"
+       target="_blank"
+       class="contact-link">
+        Công ty TNHH Thương Mại Dịch Vụ Thái Tín Tech
+    </a>
+</p>
         </div>
 
         <div class="info-item">
             <h3>📧 Email</h3>
-            <p>techstore@gmail.com</p>
+            <p>
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=techstore@gmail.com"
+       target="_blank"
+       class="email-link">
+        techstore@gmail.com
+    </a>
+</p>
         </div>
 
         <div class="info-item">
             <h3>📞 Hotline</h3>
-            <p>0123 456 789</p>
+            <p>
+    <a href="tel:0123456789"
+       class="contact-link">
+        0123 456 789
+    </a>
+</p>
         </div>
     </div>
 
-    <a href="index.html" class="back-home">⬅ Quay về trang chủ</a>
+    <a href="codedasua.html" class="back-home">⬅ Quay về trang chủ</a>
 </section>
 
 </body>
-
 </html>
