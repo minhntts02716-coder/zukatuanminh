@@ -6,21 +6,28 @@
     <link rel="stylesheet" href="GRID-1.css">
 
     <style>
-        .intro-header {
-            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-            color: white;
-            padding: 60px 20px;
-            text-align: center;
-        }
+           .intro-header {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+    padding: 20px 20px;
+    text-align: center;
 
-        .intro-box {
-            background: #fff;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-            max-width: 800px;
-            margin: -40px auto 40px;
-        }
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+            .intro-box {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    max-width: 800px;
+
+    margin: 140px auto 40px; /* đẩy xuống dưới header */
+}
 
         .intro-box h2 {
             color: #2c5364;
@@ -72,6 +79,10 @@
 </header>
 
 <section class="intro-box">
+    <img
+    src="cuahang.jpg"
+    alt="Tech Store"
+    class="intro-image">
     <h2>Về chúng tôi</h2>
     <p>
         Tech Store là cửa hàng chuyên cung cấp máy tính, laptop và linh kiện chính hãng.
@@ -89,9 +100,8 @@
         <div class="feature-item">🎮 Gaming mượt mà</div>
     </div>
 
-    <a href="index.html" class="back-home">⬅ Quay về trang chủ</a>
+    <a href="codedasua.html" class="back-home">⬅ Quay về trang chủ</a>
 </section>
 
 </body>
-
 </html>
