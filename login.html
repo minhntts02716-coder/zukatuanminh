@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng nhập - Tech Store</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Catamaran', sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login-box {
+            background: #fff;
+            padding: 35px;
+            width: 350px;
+            border-radius: 15px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+            text-align: center;
+        }
+
+        .login-box h2 {
+            margin-bottom: 20px;
+            color: #2c5364;
+        }
+
+        .login-box input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 15px;
+        }
+
+        .login-box input:focus {
+            outline: none;
+            border-color: #2c5364;
+        }
+
+        .login-box button {
+            width: 100%;
+            padding: 12px;
+            background: #2c5364;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .login-box button:hover {
+            background: #203a43;
+        }
+
+        .login-box p {
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        .login-box a {
+            color: #2c5364;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .login-box a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="login-box">
+    <h2>ĐĂNG NHẬP</h2>
+
+    <form>
+        <input type="text" placeholder="Tên đăng nhập" required>
+        <input type="password" placeholder="Mật khẩu" required>
+        <button type="submit">ĐĂNG NHẬP</button>
+    </form>
+
+    <p>
+        ⬅ <a href="codedasua.html">Quay về trang chủ</a>
+    </p>
+</div>
+
+</body>
+</html>
