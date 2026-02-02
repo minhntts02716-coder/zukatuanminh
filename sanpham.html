@@ -7,20 +7,26 @@
 
     <style>
         .product-header {
-            background: linear-gradient(135deg, #1d2671, #c33764);
-            color: white;
-            padding: 60px 20px;
-            text-align: center;
-        }
+    background: linear-gradient(135deg, #1d2671, #c33764);
+    color: white;
+    padding: 20px 20px;
+    text-align: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
 
         .product-box {
-            max-width: 900px;
-            margin: -40px auto 40px;
-            background: white;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-        }
+    max-width: 900px;
+    margin: 140px auto 40px; /* đẩy xuống dưới header */
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
 
         .product-box h2 {
             text-align: center;
@@ -69,6 +75,9 @@
         .back-home:hover {
             background: #c33764;
         }
+        .products {
+    margin-top: 40px;
+}
     </style>
 </head>
 <body>
@@ -80,26 +89,25 @@
 
 <section class="product-box">
     <h2>Danh mục sản phẩm</h2>
-
     <div class="product-grid">
         <div class="product-item">
             <span>⌨️</span>
-            Bàn phím cơ Gaming
+            Bàn phím làm việc
         </div>
 
         <div class="product-item">
             <span>🖱️</span>
-            Chuột Gaming
+            Chuột
         </div>
 
         <div class="product-item">
             <span>🎧</span>
-            Tai nghe Gaming
+            Tai nghe 
         </div>
 
         <div class="product-item">
             <span>💻</span>
-            Laptop văn phòng & Gaming
+            Laptop văn phòng 
         </div>
 
         <div class="product-item">
@@ -107,10 +115,53 @@
             Máy in & Linh kiện PC
         </div>
     </div>
-
-    <a href="index.html" class="back-home">⬅ Quay về trang chủ</a>
 </section>
+<section class="products container">
+        <h2>SẢN PHẨM CỦA CHÚNG TÔI</h2>
+
+        <div class="product-grid">
+            <div class="product">
+                <img src="photo-1587829741301-dc798b83add3.jpg">
+                <h4>BÀN PHÍM LÀM VIỆC</h4>
+                <p class="price">1.290.000đ</p>
+                <a href="login.html" class="buy-btn">MUA</a>
+            </div>
+            
+
+            <div class="product">
+                <img src="photo-1612815154858-60aa4c59eaa6.jpg">
+                <h4>MÁY IN</h4>
+                <p class="price">890.000đ</p>
+                <a href="login.html" class="buy-btn">MUA</a>
+            </div>
+
+            <div class="product">
+                <img src="images.jpg">
+                <h4>TAI NGHE</h4>
+                <p class="price">1.590.000đ</p>
+                <a href="login.html" class="buy-btn">MUA</a>
+            </div>
+               <div class="product">
+                <img src="chuotvph.jpg">
+                <h4>CHUỘT</h4>
+                <p class="price">1.590.000đ</p>
+                <a href="login.html" class="buy-btn">MUA</a>
+            </div>
+                <div class="product">
+                <img src="linhkien.jpg">
+                <h4>LINH KIỆN PC</h4>
+                <a href="login.html" class="buy-btn">MUA</a>
+            </div>
+        </div>
+
+        <div class="highlight">
+            <img src="laptopvp.jpg">
+            <h3>LAPTOP VĂN PHÒNG</h3>
+            <p class="price big">18.900.000đ</p>
+            <a href="#" class="buy-btn">MUA</a>
+        </div>
+         <a href="codedasua.html" class="back-home">⬅ Quay về trang chủ</a>
+    </section>
 
 </body>
-
 </html>
